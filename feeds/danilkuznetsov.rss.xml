@@ -1,46 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Blog About Computers</title><link>https://danilkuznetsov.github.io/</link><description></description><lastBuildDate>Thu, 10 Nov 2016 23:00:00 +0200</lastBuildDate><item><title>Интерация по ArrayList в Java</title><link>https://danilkuznetsov.github.io/blog/interate-arraylist-in-java.html</link><description>&lt;h3&gt;Что это такое ?&lt;/h3&gt;
+<rss version="2.0"><channel><title>Blog About Computers - danil.kuznetsov</title><link>http://localhost:8000/</link><description></description><lastBuildDate>Thu, 10 Nov 2016 23:00:00 +0200</lastBuildDate><item><title>Интерация по ArrayList в Java</title><link>http://localhost:8000/blog/interate-arraylist-in-java.html</link><description>&lt;h3&gt;Что это такое ?&lt;/h3&gt;
 &lt;p&gt;ArrayList - это список реализованный в виде массива, все элементы в нем отсортированы в порядке добавления.
 Доступ к элементам происходит по индексу, нумерации начинается с 0. В отличии от Set может содержать дубликаты и null элементы.&lt;/p&gt;
-&lt;p&gt;При создании должен быть проинициализирован начальным размером capacity (по умолчанию capacity = 10) , в процессе размер растет динамически.
-При записи в позицию capacity +1 элемента происходит динамическое увеличение, а именно создается новый массив кол-во элементов в котором равно (capacity * 3) / 2 + 1 и в него перемещаются все элементы из старого + плюс добавляется новый элемент. В связи с этим свойством вставка в конец происходит в среднем за постоянное время. В среднем т.к периодически происходят операции расширения, которые  занимают больше времени, чем вставка в пустую ячейку. Удаление элемента в конце происходит за постоянное время. Проблемы у ArrayList начинаются при операциях вставки/удаления в середине списка, при этих операциях необходимо передвигать элементы внутри массива. При удалении размер массива не уменьшается, до явного вызова метода  trimToSize().&lt;/p&gt;
-&lt;p&gt;Основные характеристики:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Доступ по индексу к элементу за постоянное время.&lt;/li&gt;
-&lt;li&gt;Вставка в конец в среднем за постоянное время.&lt;/li&gt;
-&lt;li&gt;Удаление в конце за постоянное время.&lt;/li&gt;
-&lt;li&gt;Вставка/удаление в середине за О(n)&lt;/li&gt;
-&lt;li&gt;Может содержать дубликаты&lt;/li&gt;
-&lt;li&gt;Может содерджать null&lt;/li&gt;
-&lt;li&gt;Динамическое увеличивает размер по формуле (capacity * 3) / 2 + 1&lt;/li&gt;
-&lt;li&gt;Необходимо явно уменьшать размер с помощью  trimToSize().&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Примеры интерации по ArrayList&lt;/h3&gt;
-&lt;p&gt;В Java существует много способ итерации по списку, рассмотрим их вместе с выводом:&lt;/p&gt;
-&lt;script src="https://gist.github.com/danilkuznetsov/8ec59646554783f0913b24b696e3d5d9.js"&gt;&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Wed, 15 Jun 2016 09:20:00 +0300</pubDate><guid isPermaLink="false">tag:danilkuznetsov.github.io,2016-06-15:blog/interate-arraylist-in-java.html</guid><category>collections</category><category>arraylist</category></item><item><title>Установка git client в Windows</title><link>https://danilkuznetsov.github.io/blog/install-git-for-windows.html</link><description>&lt;h1&gt;Установка git client в Windows&lt;/h1&gt;
-&lt;h3&gt;Необходимые шаги для установки.&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt; Скачиваем дистрибутив для своей версии OS &lt;/strong&gt; &lt;a href="http://git-scm.com/download/win"&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Запускаем установку.&lt;/strong&gt;
-   &lt;img alt="install git for windows start step 1" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-start-1.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Отмечаем компоненты для установки.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 2" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-2.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Указываем необходимость внесения изменений в Path.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 3" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-3.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Выбераем схему обработки символов перевода строк.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 4" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-4.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Устанавливаем.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 5" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-5.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Готово.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 6" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-finish-6.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Прверка установки&lt;/strong&gt; &lt;code&gt;git --version.&lt;/code&gt;
-   &lt;img alt="install git for windows step 7" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-check-version-7.png" /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Настройка клиента после установки.&lt;/h3&gt;
-&lt;p&gt;После установки необходимо провести настройку user.name and user.email, для этого необходимо выполнить в командной строке две команды, подставив нужные значения :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global user.name &lt;span class="s2"&gt;&amp;quot;YOUR NAME&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global user.email &lt;span class="s2"&gt;&amp;quot;YOUR EMAIL ADDRESS&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Thu, 10 Nov 2016 23:00:00 +0200</pubDate><guid isPermaLink="false">tag:danilkuznetsov.github.io,2015-11-10:blog/install-git-for-windows.html</guid><category>windows</category><category>git</category></item></channel></rss>
+&lt;p&gt;При создании должен быть проинициализирован начальным размером capacity (по умолчанию capacity = 10 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Wed, 15 Jun 2016 09:20:00 +0300</pubDate><guid isPermaLink="false">tag:localhost,2016-06-15:/blog/interate-arraylist-in-java.html</guid><category>collections</category><category>arraylist</category></item><item><title>Установка git client в Windows</title><link>http://localhost:8000/blog/install-git-for-windows.html</link><description>&lt;p&gt;Установка git client в Windows&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Tue, 10 Nov 2015 23:00:00 +0200</pubDate><guid isPermaLink="false">tag:localhost,2015-11-10:/blog/install-git-for-windows.html</guid><category>windows</category><category>git</category></item></channel></rss>

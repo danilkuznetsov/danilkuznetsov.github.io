@@ -1,28 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Blog About Computers</title><link>https://danilkuznetsov.github.io/</link><description></description><lastBuildDate>Thu, 10 Nov 2016 23:00:00 +0200</lastBuildDate><item><title>Установка git client в Windows</title><link>https://danilkuznetsov.github.io/blog/install-git-for-windows.html</link><description>&lt;h1&gt;Установка git client в Windows&lt;/h1&gt;
-&lt;h3&gt;Необходимые шаги для установки.&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt; Скачиваем дистрибутив для своей версии OS &lt;/strong&gt; &lt;a href="http://git-scm.com/download/win"&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Запускаем установку.&lt;/strong&gt;
-   &lt;img alt="install git for windows start step 1" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-start-1.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Отмечаем компоненты для установки.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 2" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-2.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Указываем необходимость внесения изменений в Path.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 3" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-3.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Выбераем схему обработки символов перевода строк.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 4" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-4.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Устанавливаем.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 5" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-step-5.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Готово.&lt;/strong&gt;
-   &lt;img alt="install git for windows step 6" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-finish-6.png" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Прверка установки&lt;/strong&gt; &lt;code&gt;git --version.&lt;/code&gt;
-   &lt;img alt="install git for windows step 7" src="https://danilkuznetsov.github.io/images/git-for-windows/git-windows-check-version-7.png" /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Настройка клиента после установки.&lt;/h3&gt;
-&lt;p&gt;После установки необходимо провести настройку user.name and user.email, для этого необходимо выполнить в командной строке две команды, подставив нужные значения :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global user.name &lt;span class="s2"&gt;&amp;quot;YOUR NAME&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global user.email &lt;span class="s2"&gt;&amp;quot;YOUR EMAIL ADDRESS&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Thu, 10 Nov 2016 23:00:00 +0200</pubDate><guid isPermaLink="false">tag:danilkuznetsov.github.io,2015-11-10:blog/install-git-for-windows.html</guid><category>windows</category><category>git</category></item></channel></rss>
+<rss version="2.0"><channel><title>Blog About Computers - git</title><link>http://localhost:8000/</link><description></description><lastBuildDate>Thu, 10 Nov 2016 23:00:00 +0200</lastBuildDate><item><title>Установка git client в Windows</title><link>http://localhost:8000/blog/install-git-for-windows.html</link><description>&lt;p&gt;Установка git client в Windows&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Tue, 10 Nov 2015 23:00:00 +0200</pubDate><guid isPermaLink="false">tag:localhost,2015-11-10:/blog/install-git-for-windows.html</guid><category>windows</category><category>git</category></item></channel></rss>

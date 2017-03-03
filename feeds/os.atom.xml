@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/var/log - os</title><link href="https://danilkuznetsov.github.io/" rel="alternate"></link><link href="https://danilkuznetsov.github.io/feeds/os.atom.xml" rel="self"></link><id>https://danilkuznetsov.github.io/</id><updated>2015-08-24T19:19:00+03:00</updated><entry><title>Включаем RDP на пользовательском ПК удаленно.</title><link href="https://danilkuznetsov.github.io/remote-enable-rdp-service.html" rel="alternate"></link><published>2015-08-24T19:19:00+03:00</published><updated>2015-08-24T19:19:00+03:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2015-08-24:/remote-enable-rdp-service.html</id><summary type="html">&lt;h4&gt;Для удаленного включения RDP на пользовательском ПК необходимо пройти ряд простых шагов:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Запускаем средство для редактирования реестра: 
+    &lt;code&gt;пуск -&amp;gt; выполнить  -&amp;gt; regedit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Подключаемся к удаленному хосту &lt;code&gt;File -&amp;gt; Connect Network -&amp;gt; registry&lt;/code&gt; и вводим имя удаленного хоста.&lt;/li&gt;
+&lt;li&gt;Переходим в &lt;code&gt;HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Находим и меняем параметр &lt;strong&gt;FdenyTSConnections&lt;/strong&gt;. Он имеет два …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h4&gt;Для удаленного включения RDP на пользовательском ПК необходимо пройти ряд простых шагов:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Запускаем средство для редактирования реестра: 
+    &lt;code&gt;пуск -&amp;gt; выполнить  -&amp;gt; regedit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Подключаемся к удаленному хосту &lt;code&gt;File -&amp;gt; Connect Network -&amp;gt; registry&lt;/code&gt; и вводим имя удаленного хоста.&lt;/li&gt;
+&lt;li&gt;Переходим в &lt;code&gt;HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Находим и меняем параметр &lt;strong&gt;FdenyTSConnections&lt;/strong&gt;. Он имеет два состояния &lt;code&gt;1 - Выключено. 0 - Включено.&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Для работы на удаленной машине должны быть запущенны службы (&lt;strong&gt;Удаленный реестр и Сервер Терминалов&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Для включения необходимых служб можно использовать:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;оснастку &lt;strong&gt;Управление компьютером&lt;/strong&gt; с подключение к удаленному хосту&lt;/li&gt;
+&lt;li&gt;утилиту &lt;strong&gt;psexec&lt;/strong&gt;. &lt;ul&gt;
+&lt;li&gt;Формат команды: &lt;code&gt;psexec \\\\server -u username -p password net start &amp;lt;name service&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="windows"></category></entry></feed>

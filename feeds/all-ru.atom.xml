@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog About Computers</title><link href="https://danilkuznetsov.github.io/" rel="alternate"></link><link href="https://danilkuznetsov.github.io/feeds/all-ru.atom.xml" rel="self"></link><id>https://danilkuznetsov.github.io/</id><updated>2016-11-10T23:00:00+02:00</updated><entry><title>Интерация по ArrayList в Java</title><link href="https://danilkuznetsov.github.io/blog/interate-arraylist-in-java.html" rel="alternate"></link><published>2016-06-15T09:20:00+03:00</published><updated>2016-06-15T09:20:00+03:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2016-06-15:/blog/interate-arraylist-in-java.html</id><summary type="html">&lt;h3&gt;Что это такое ?&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/var/log</title><link href="https://danilkuznetsov.github.io/" rel="alternate"></link><link href="https://danilkuznetsov.github.io/feeds/all-ru.atom.xml" rel="self"></link><id>https://danilkuznetsov.github.io/</id><updated>2017-01-09T19:19:00+02:00</updated><entry><title>Objectified</title><link href="https://danilkuznetsov.github.io/objectified.html" rel="alternate"></link><published>2017-01-09T19:19:00+02:00</published><updated>2017-01-09T19:19:00+02:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2017-01-09:/objectified.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=wNwKzRQIj_k"&gt;&lt;img alt="Objectified" src="http://img.youtube.com/vi/wNwKzRQIj_k/0.jpg"&gt;&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=wNwKzRQIj_k"&gt;&lt;img alt="Objectified" src="http://img.youtube.com/vi/wNwKzRQIj_k/0.jpg"&gt;&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Интерация по ArrayList в Java</title><link href="https://danilkuznetsov.github.io/interate-arraylist-in-java.html" rel="alternate"></link><published>2016-06-15T09:20:00+03:00</published><updated>2016-06-15T09:20:00+03:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2016-06-15:/interate-arraylist-in-java.html</id><summary type="html">&lt;h3&gt;Что это такое ?&lt;/h3&gt;
 &lt;p&gt;ArrayList - это список реализованный в виде массива, все элементы в нем отсортированы в порядке добавления.
 Доступ к элементам происходит по индексу, нумерации начинается с 0. В отличии от Set может содержать дубликаты и null элементы.&lt;/p&gt;
 &lt;p&gt;При создании должен быть проинициализирован начальным размером capacity (по умолчанию capacity = 10 …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Что это такое ?&lt;/h3&gt;
@@ -20,7 +20,7 @@
 &lt;/ul&gt;
 &lt;h3&gt;Примеры интерации по ArrayList&lt;/h3&gt;
 &lt;p&gt;В Java существует много способ итерации по списку, рассмотрим их вместе с выводом:&lt;/p&gt;
-&lt;script src="https://gist.github.com/danilkuznetsov/8ec59646554783f0913b24b696e3d5d9.js"&gt;&lt;/script&gt;</content><category term="collections"></category><category term="arraylist"></category></entry><entry><title>Установка git client в Windows</title><link href="https://danilkuznetsov.github.io/blog/install-git-for-windows.html" rel="alternate"></link><published>2015-11-10T23:00:00+02:00</published><updated>2016-11-10T23:00:00+02:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2015-11-10:/blog/install-git-for-windows.html</id><summary type="html">&lt;p&gt;Установка git client в Windows&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Установка git client в Windows&lt;/h1&gt;
+&lt;script src="https://gist.github.com/danilkuznetsov/8ec59646554783f0913b24b696e3d5d9.js"&gt;&lt;/script&gt;</content><category term="collections"></category><category term="arraylist"></category></entry><entry><title>Установка git client в Windows</title><link href="https://danilkuznetsov.github.io/install-git-for-windows.html" rel="alternate"></link><published>2015-11-10T23:00:00+02:00</published><updated>2016-11-10T23:00:00+02:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2015-11-10:/install-git-for-windows.html</id><summary type="html">&lt;p&gt;Установка git client в Windows&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Установка git client в Windows&lt;/h1&gt;
 &lt;h3&gt;Необходимые шаги для установки.&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt; Скачиваем дистрибутив для своей версии OS &lt;/strong&gt; &lt;a href="http://git-scm.com/download/win"&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;/li&gt;
@@ -46,4 +46,26 @@
 
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global user.email &lt;span class="s2"&gt;&amp;quot;YOUR EMAIL ADDRESS&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="windows"></category><category term="git"></category></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;</content><category term="windows"></category><category term="git"></category></entry><entry><title>Включаем RDP на пользовательском ПК удаленно.</title><link href="https://danilkuznetsov.github.io/remote-enable-rdp-service.html" rel="alternate"></link><published>2015-08-24T19:19:00+03:00</published><updated>2015-08-24T19:19:00+03:00</updated><author><name>danil.kuznetsov</name></author><id>tag:danilkuznetsov.github.io,2015-08-24:/remote-enable-rdp-service.html</id><summary type="html">&lt;h4&gt;Для удаленного включения RDP на пользовательском ПК необходимо пройти ряд простых шагов:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Запускаем средство для редактирования реестра: 
+    &lt;code&gt;пуск -&amp;gt; выполнить  -&amp;gt; regedit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Подключаемся к удаленному хосту &lt;code&gt;File -&amp;gt; Connect Network -&amp;gt; registry&lt;/code&gt; и вводим имя удаленного хоста.&lt;/li&gt;
+&lt;li&gt;Переходим в &lt;code&gt;HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Находим и меняем параметр &lt;strong&gt;FdenyTSConnections&lt;/strong&gt;. Он имеет два …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h4&gt;Для удаленного включения RDP на пользовательском ПК необходимо пройти ряд простых шагов:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Запускаем средство для редактирования реестра: 
+    &lt;code&gt;пуск -&amp;gt; выполнить  -&amp;gt; regedit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Подключаемся к удаленному хосту &lt;code&gt;File -&amp;gt; Connect Network -&amp;gt; registry&lt;/code&gt; и вводим имя удаленного хоста.&lt;/li&gt;
+&lt;li&gt;Переходим в &lt;code&gt;HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Находим и меняем параметр &lt;strong&gt;FdenyTSConnections&lt;/strong&gt;. Он имеет два состояния &lt;code&gt;1 - Выключено. 0 - Включено.&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Для работы на удаленной машине должны быть запущенны службы (&lt;strong&gt;Удаленный реестр и Сервер Терминалов&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Для включения необходимых служб можно использовать:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;оснастку &lt;strong&gt;Управление компьютером&lt;/strong&gt; с подключение к удаленному хосту&lt;/li&gt;
+&lt;li&gt;утилиту &lt;strong&gt;psexec&lt;/strong&gt;. &lt;ul&gt;
+&lt;li&gt;Формат команды: &lt;code&gt;psexec \\\\server -u username -p password net start &amp;lt;name service&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="windows"></category></entry></feed>

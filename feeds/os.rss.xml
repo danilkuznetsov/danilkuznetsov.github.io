@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>/var/log - os</title><link>https://danilkuznetsov.github.io/</link><description></description><lastBuildDate>Mon, 24 Aug 2015 19:19:00 +0300</lastBuildDate><item><title>Включаем RDP на пользовательском ПК удаленно.</title><link>https://danilkuznetsov.github.io/remote-enable-rdp-service.html</link><description>&lt;h4&gt;Для удаленного включения RDP на пользовательском ПК необходимо пройти ряд простых шагов:&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Запускаем средство для редактирования реестра: 
-    &lt;code&gt;пуск -&amp;gt; выполнить  -&amp;gt; regedit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Подключаемся к удаленному хосту &lt;code&gt;File -&amp;gt; Connect Network -&amp;gt; registry&lt;/code&gt; и вводим имя удаленного хоста.&lt;/li&gt;
-&lt;li&gt;Переходим в &lt;code&gt;HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Находим и меняем параметр &lt;strong&gt;FdenyTSConnections&lt;/strong&gt;. Он имеет два …&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">danil.kuznetsov</dc:creator><pubDate>Mon, 24 Aug 2015 19:19:00 +0300</pubDate><guid isPermaLink="false">tag:danilkuznetsov.github.io,2015-08-24:/remote-enable-rdp-service.html</guid><category>windows</category></item></channel></rss>

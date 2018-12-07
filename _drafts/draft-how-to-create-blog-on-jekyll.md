@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Свой блог на  Jekyll и  Github Pages за 20 минут.
+title:  Jekyll и Github Pages 101.
 date:   2018-09-29 15:00:00 +0300
 categories: [howto]
 ---
 
-Сегодня завести личный блог или статический стало очень просто.
-Работа в этом направлении было проведенно не мало.
+Сегодня завести личный блог или статический сайт стало очень просто.
+Работы в этом направлении было проведенно не мало.
 В итоге мы получили возможность за считанные минуты развернуть и опубликовать свое личное пространство в сети.
 
 Инструментов и подходов очень много, я разберу на мой взгляд самый простой, для всех кто более или менее связан с ИТ отраслью.
@@ -53,7 +53,42 @@ sudo dnf install ruby ruby-devel @development-tools
 gem install jekyll bundler
 ```
 
-#### Создание постов и страниц
+#### Создание сайта
+
+После установки мы можем создать свой сайт.
+В этом поможет простая команда:
+
+```bash
+jekyll new new-site
+```
+
+Результат работы директория new-site  с такой структурой:
+
+```
+├── _config.yml
+├── _data
+|   └── members.yml
+├── _drafts
+|   ├── begin-with-the-crazy-ideas.md
+|   └── on-simplicity-in-technology.md
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
+|   └── 2009-04-26-barcamp-boston-4-roundup.md
+├── _sass
+|   ├── _base.scss
+|   └── _layout.scss
+├── _site
+├── .jekyll-metadata
+└── index.html # can also be an 'index.md' with valid front matter
+```
+
+#### Добавление постов и страниц
 
 #### Сборка и запуск сайта на локальной машине
 
@@ -61,5 +96,7 @@ gem install jekyll bundler
 
 #### Публикация результатов работы.
 
+
+#### Установка и запуск существуюшего проекта.
 
 

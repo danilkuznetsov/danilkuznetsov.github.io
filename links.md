@@ -25,3 +25,4 @@ permalink: /links/
 * [Free Ebook Fondantion](https://github.com/EbookFoundation/free-programming-books)
     * [English Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md)
     * [Russian Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-ru.md)
+* [List of CS courses](https://github.com/prakhar1989/awesome-courses)

@@ -18,7 +18,6 @@ permalink: /links/
     * [Auto build and publish to githubpages](https://zonca.github.io/2013/09/automatically-build-pelican-and-publish-to-github-pages.html)
     * [Make a Github Pages blog with Pelican](https://fedoramagazine.org/make-github-pages-blog-with-pelican/)
 * [Jekyll](https://jekyllrb.com/)
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)
 
 ### List of Free Learning Resources:
 

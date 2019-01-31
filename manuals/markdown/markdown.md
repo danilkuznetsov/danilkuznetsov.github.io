@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Links
+title: Markdown Manual
 permalink: /manuals/markdown
 ---
 
-##### Document internal links
+#### Document internal links
 
 [Original answer](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown)
 
@@ -30,5 +30,5 @@ and we can even [link](#head1234) to it so:
 (On SO, the link doesn't work because the anchor is stripped.)
 
 
-### More information:
+#### More information:
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)

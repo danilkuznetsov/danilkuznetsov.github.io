@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Установка Git в Windows
-permalink: /tips/git/how-to-install-git-in-windows
+permalink: /tips/git/how-to-install-git-for-windows
 ---
 
 ### Необходимые шаги для установки.

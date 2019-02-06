@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Docker Manual
-permalink: /manuals/docker
+title: Docker Tips
+permalink: /tips/docker
 ---
 
  - Networking Tips

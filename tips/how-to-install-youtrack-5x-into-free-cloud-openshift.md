@@ -1,13 +1,13 @@
 ---
-layout: post
+layout: page
 title:  Устанавливаем youtrack 5.x в бесплатном облаке openshift.
-date:   2016-11-10 08:00:00 +0300
-categories: [howto]
+permalink: /tips/how-to-install-youtrack
 ---
+
 
 **Запуск youtrack будем производить в Standalone (используя встроенный jetty) режиме.**
 
-#### Требования yourtrack:
+#### Требования youtrack:
  * To run YouTrack Standalone via JAR distribution file, you need to have
 Java JDK 1.5 and higher.*
 * YouTrack requires at least 512Mb of JVM heap memory. You can set the

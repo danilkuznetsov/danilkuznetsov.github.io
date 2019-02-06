@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Markdown Manual
-permalink: /manuals/markdown
+title: Markdown Tips
+permalink: /tips/markdown
 ---
 
 #### Document internal links

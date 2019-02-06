@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: page
 title:  Установка Git в Windows
-date:   2016-11-10 08:00:00 +0300
-categories: [git]
+permalink: /tips/git/how-to-install-git-in-windows
 ---
 
 ### Необходимые шаги для установки.

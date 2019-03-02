@@ -19,9 +19,13 @@ permalink: /links/
     * [Make a Github Pages blog with Pelican](https://fedoramagazine.org/make-github-pages-blog-with-pelican/)
 * [Jekyll](https://jekyllrb.com/)
 
-### List of Free Learning Resources:
+### List of free learning resources:
 
 * [Free Ebook Fondantion](https://github.com/EbookFoundation/free-programming-books)
     * [English Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md)
     * [Russian Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-ru.md)
 * [List of CS courses](https://github.com/prakhar1989/awesome-courses)
+
+### List of interesting open source projects:
+
+- [MS-DOS Source Code](https://github.com/microsoft/ms-dos)

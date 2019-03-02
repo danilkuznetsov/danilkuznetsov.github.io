@@ -4,6 +4,8 @@ url: "https://danilkuznetsov.github.io"
 twitter_username: danny0x1
 github_username:  danilkuznetsov
 
+google_analytics:  UA-63832974-2
+
 # Build settings
 markdown: kramdown
 theme: minima

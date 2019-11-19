@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Полезнные ссылки
+title: Bookmarks
 permalink: /links/
 ---
 

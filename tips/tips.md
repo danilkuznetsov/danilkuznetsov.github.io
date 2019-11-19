@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Подсказки и хаки
+title: Tutorials
 permalink: /tips
 ---
 

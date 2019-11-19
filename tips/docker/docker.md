@@ -4,55 +4,46 @@ title: Docker Tips
 permalink: /tips/docker
 ---
 
- - Networking Tips
-   - Подключение контейнера к host системе.
+- Networking Tips
+  - Connecting a container to the host system
 
+### Connecting applications inside docker container to external services on the host system
 
-### Подключение приложения в docker контейнере к сервисам на host системе.
+As example, take a regular database service -> PostgreSQL.
 
-ОС - Linux.
+#### A brief review of the theory
 
-В качестве сервиса host системы возьмем PostgreSQL.
+By default, Docker uses a `bridge network driver` as the main network configuration.
 
-#### Немного теории:
+A `bridge` is a device from channel level that connects different network segments. The device can have either hard or software implementation.
 
-По умолчанию Docker использует `bridge network driver` для сетевой конфигурации.
- 
-`bridge ` - это устройство канального уровня, которое соеденяет несколько сетевых сегментов.
-Устройство может быть "железным" или "програмнным".
+Docker uses a software implementation of a `bridge` device.
 
-Docker использует программную реализацию `bridge`. 
-Этот подход работает в приделах одного хоста. Мост используется для коммуникации контейнеров между собой
-В конфигурацию iptables автоматически добавляются необходимые правила.
+This approach works only inside one host. The bridge is used for communicating different containers on the same host. Docker daemon automatically adds new rules to the iptables configuration.
 
-Можно использовать стандартный bridge или создать новую docker сеть. 
-Во втором случае необходимо учитывать что контейнеры из разных сетей не смогут коммуницировать 
-между собой без дополнительных настроек.
+In addition to using a pre-defined network, a user can create custom networks for his tasks.
 
-Со стороны host системы docker bridge - standard Linux network bridg.
-[Подронее - Arch Wiki Network Bridge](https://wiki.archlinux.org/index.php/Network_bridge)
+In the case of a custom network, containers from different networks cannot connect to each other without additional configurations.
 
-#### Адаптируем PostgreSQL для подключения со стороны docker сети:
+Host system sees this bridge as a standard Linux bridge [More information -> Arch Wiki Network Bridge](https://wiki.archlinux.org/index.php/Network_bridge)
 
-Используя теорию выше мы можем адаптировать наши хостовые сервисы для доступа из docker сети.
+#### Preparing a host's service => PostgreSQL to connection from docker's networks
 
-Для этого:
- 0. С помощью `ifconfig` определяем ip адресс стандартного docker bridge. 
-    По умолчанию интерфейс называется `docker0`. Для примера возьмем адрес `172.17.0.1` 
- 1. Настраиваем PostreSQL на прослушивание адреса `172.17.0.1`
- 2. В pg_hba.conf разрешаем подключение с паролем из сети `172.17.0.0/24`
- 3. Если у нас настроен iptables добавляем в него правило для доступа к PostgreSQL из сети docker.
-    
-    Пример правила: `iptables -A INPUT -s 172.17.0.0/24 -i docker -p tcp -m tcp --dport 5432  -j ACCEPT`
+Using the theory about the implementation of the Linux bridge, it is possible adapting a configuration of the PostgreSQL server.
 
-#### Адаптируем приложения в контейнере:
+How to change a configuration of the existing PostgreSQL server:
 
-В настройках приложения в качестве хоста базы данных необходимо указать `172.17.0.1`.
+1. Find the IP address of the bridge inside the host system. By default, the Docker daemon creates the bridge with name = `docker0`. As an example, the IP address is  `172.17.0.1`
+2. Bind the PostgreSQL server to the IP address from the first step.
+3. Allow connection from the docker network. Add a new rule to `pg_hba.conf` to allow access from the network `172.17.0.0/24`
+4. If you have a custom iptables configuration, you should add the next rule to your configuration (the address of the network you should take from the result of the first step). That rule allows connecting to your PostgreSQL server from the docker's network:
 
-Дополнительных настроек не требуется.
+   `iptables -A INPUT -s 172.17.0.0/24 -i docker -p tcp -m tcp --dport 5432  -j ACCEPT`
 
-В версия докер 18.04+ адрес установленный на bridge интерефейсе автоматически будет доступен по dns имени 
-`host.docker.internal`. 
+#### Preparing an application inside docker container
 
-Хотя судя по открытому [pull request](https://github.com/docker/for-linux/issues/264) пока не работоспособен в Linux.
+The one thing you should make is using the IP address `172.17.0.1` as a database IP address in your application properties.
 
+Additional configuration doesn't have to.
+
+For the docker 18.04+, the IP address of the bridge interface automatically is added to DNS with the name `host.docker.internal`. But the docker repo for Linux has an open issue that relates to this functionality and it might not work.

@@ -1,18 +1,22 @@
 ---
 layout: page
-title: Контакты
+title: Contacts
 permalink: /about/
 ---
 
-Меня зовут Данил Кузнецов.
+My name is Danil Kuznetsov.
+I'm a software developer.
 
-Основное направление мой работы с связанно с разработкой и поддержкой back-end систем для различных web приложений.
-В свободное время я участвую в open source проектах.
+The main responsibilities are the development and support of back-end parts of web applications.
 
-Технологии с которыми работаю:
+In my free, I participate in open-source projects.
+
+My main technology stack:
 
 - Languages: Java, JavaScript, SQL
-- Frameworks & Tools: Spring (IoC, MVC, Data Mongo, Data JPA, Data Solr), Hibernate,  Liquibase, Flyway, JUnit, Mockito, DbUnit
+- Frameworks & Tools: 
+    Spring (IoC, MVC, Data Mongo, Data JPA, Data Solr), 
+    Hibernate, Liquibase, Flyway, JUnit, Mockito, DbUnit
 - Software engineering: REST, Design patterns
 - Data format: JSON
 - Web: HTML/CSS, Bootstrap, Thymeleaf, Jade, Gulp
@@ -20,4 +24,4 @@ permalink: /about/
 - Tools & Servers: Tomcat, Jetty, Docker, Travis CI, Ansible, Nginx
 - Development Tools: IntelliJ IDEA, Maven, Git
 
-[Более подробное резюме ....](https://goo.gl/tH32kG)
+[Read more in my full CV ....](https://goo.gl/tH32kG)

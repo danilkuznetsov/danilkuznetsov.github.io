@@ -13,6 +13,6 @@ plugins:
   - jekyll-feed
 
 header_pages:
- - links.md
  - tips/tips.md
+ - links.md
  - about.md

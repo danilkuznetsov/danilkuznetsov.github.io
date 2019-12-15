@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CONTAINER_NAME=jekyll-local-dev
+CONTAINER_NAME=jekyll-blog-dev
 
 if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; 
 then
